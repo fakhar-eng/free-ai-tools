@@ -1,0 +1,2838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeAITools Hub | Discover 1000+ Free AI Tools Online</title>
+    <meta name="description" content="FreeAITools Hub is your trusted directory for discovering and comparing 1000+ AI-powered tools across categories like writing, coding, image generation, and productivity.">
+    <meta name="keywords" content="free AI tools, AI tools directory, AI writing tools, AI image generation, AI productivity tools, AI coding tools, 1000+ AI tools">
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="FreeAITools Hub | Discover 1000+ Free AI Tools Online">
+    <meta property="og:description" content="Explore 1000+ free AI tools for business, design, productivity, and learning — all in one place.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freeaitools.netlify.app">
+    <meta property="og:image" content="https://freeaitools.netlify.app/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FreeAITools Hub | Discover 1000+ Free AI Tools Online">
+    <meta name="twitter:description" content="Explore 1000+ free AI tools for business, design, productivity, and learning — all in one place.">
+    <meta name="twitter:image" content="https://freeaitools.netlify.app/og-image.jpg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "FreeAITools Hub",
+        "url": "https://freeaitools.netlify.app",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://freeaitools.netlify.app/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "description": "Your trusted directory for discovering and comparing 1000+ AI-powered tools across categories like writing, coding, image generation, and productivity.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "FreeAITools Hub",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://freeaitools.netlify.app/logo.png"
+            }
+        }
+    }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary: #4f46e5;
+            --primary-dark: #4338ca;
+            --primary-light: #818cf8;
+            --secondary: #8b5cf6;
+            --secondary-dark: #7c3aed;
+            --accent: #06b6d4;
+            --accent-dark: #0891b2;
+            
+            --bg-dark: #0f172a;
+            --bg-darker: #020617;
+            --bg-card: #1e293b;
+            --bg-card-hover: #334155;
+            
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dark: #1e293b;
+            
+            --border-radius: 12px;
+            --border-radius-lg: 20px;
+            --border-radius-sm: 8px;
+            
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-glow: 0 0 20px rgba(79, 70, 229, 0.5);
+            --shadow-glow-secondary: 0 0 20px rgba(139, 92, 246, 0.5);
+            
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: all 0.15s ease;
+        }
+        
+        /* Light Mode Variables */
+        [data-theme="light"] {
+            --bg-dark: #f8fafc;
+            --bg-darker: #f1f5f9;
+            --bg-card: #ffffff;
+            --bg-card-hover: #f8fafc;
+            
+            --text-light: #1e293b;
+            --text-muted: #64748b;
+            --text-dark: #0f172a;
+        }
+        
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-light);
+            background-color: var(--bg-dark);
+            transition: var(--transition);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary-light);
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        button {
+            cursor: pointer;
+            border: none;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        
+        /* Utility Classes */
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+            z-index: -1;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+        }
+        
+        .btn-secondary:hover {
+            box-shadow: var(--shadow-glow-secondary);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            box-shadow: none;
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+            box-shadow: var(--shadow-glow);
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        /* Glassmorphism Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(79, 70, 229, 0.2);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: var(--text-light);
+            gap: 0.75rem;
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+        
+        .nav-toggle {
+            display: none;
+            background: none;
+            font-size: 1.5rem;
+            color: var(--text-light);
+            padding: 0.5rem;
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+        }
+        
+        .nav-toggle:hover {
+            background-color: rgba(79, 70, 229, 0.1);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-link {
+            color: var(--text-light);
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .theme-toggle {
+            background: none;
+            color: var(--text-light);
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+        
+        .theme-toggle:hover {
+            background-color: rgba(79, 70, 229, 0.1);
+            transform: rotate(30deg);
+        }
+        
+        .user-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--bg-card);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(79, 70, 229, 0.3);
+        }
+        
+        .user-greeting {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+        
+        .user-menu button {
+            background: none;
+            color: var(--text-light);
+            padding: 0.25rem 0.5rem;
+            border-radius: var(--border-radius-sm);
+            transition: var(--transition);
+        }
+        
+        .user-menu button:hover {
+            background: rgba(79, 70, 229, 0.1);
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+            margin-top: 70px;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(79, 70, 229, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 80%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+            animation: pulse 10s ease-in-out infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+        
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(79, 70, 229, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(79, 70, 229, 0.5), 0 0 20px rgba(79, 70, 229, 0.3); }
+            to { text-shadow: 0 0 20px rgba(79, 70, 229, 0.8), 0 0 30px rgba(79, 70, 229, 0.5), 0 0 40px rgba(79, 70, 229, 0.3); }
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        
+        .hero-search {
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+            position: relative;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+            border: 2px solid rgba(79, 70, 229, 0.3);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: var(--transition);
+            background-color: rgba(15, 23, 42, 0.7);
+            color: var(--text-light);
+            box-shadow: var(--shadow);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1), var(--shadow-glow);
+        }
+        
+        .search-input::placeholder {
+            color: var(--text-muted);
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 1.25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 1.25rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        /* Categories Section */
+        .categories-section {
+            background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-darker) 100%);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .category-card {
+            background-color: var(--bg-card);
+            border-radius: var(--border-radius-lg);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(79, 70, 229, 0.2);
+            box-shadow: var(--shadow);
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+            border-color: var(--primary);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+        
+        .category-description {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        
+        /* Tools Grid */
+        .tools-section {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 100%);
+        }
+        
+        .tools-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .tools-count {
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .sort-options {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .filter-select {
+            padding: 0.75rem;
+            border: 1px solid rgba(79, 70, 229, 0.3);
+            border-radius: var(--border-radius-sm);
+            background-color: rgba(15, 23, 42, 0.7);
+            color: var(--text-light);
+            font-size: 0.9rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+        
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .tool-card {
+            background-color: var(--bg-card);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            border: 1px solid rgba(79, 70, 229, 0.2);
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+            border-color: var(--primary);
+        }
+        
+        .tool-image {
+            height: 200px;
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-card-hover) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .tool-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, transparent 30%, rgba(79, 70, 229, 0.1) 50%, transparent 70%);
+            animation: shimmer 3s infinite linear;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .tool-image img {
+            max-height: 120px;
+            width: auto;
+            object-fit: contain;
+            transition: var(--transition);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .tool-card:hover .tool-image img {
+            transform: scale(1.05);
+        }
+        
+        .favorite-btn {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: var(--transition);
+            z-index: 2;
+        }
+        
+        .favorite-btn:hover {
+            background: rgba(0, 0, 0, 0.9);
+            transform: scale(1.1);
+        }
+        
+        .favorite-btn.favorited {
+            color: #ff4757;
+        }
+        
+        .tool-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .tool-category {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            align-self: flex-start;
+        }
+        
+        .tool-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.3;
+            color: var(--text-light);
+        }
+        
+        .tool-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .stars {
+            display: flex;
+            gap: 0.1rem;
+        }
+        
+        .star {
+            color: #ffd700;
+            font-size: 0.9rem;
+        }
+        
+        .star.empty {
+            color: var(--text-muted);
+        }
+        
+        .rating-text {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        
+        .tool-tagline {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            flex-grow: 1;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .tool-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .tool-tag {
+            background-color: rgba(79, 70, 229, 0.1);
+            color: var(--primary-light);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            border: 1px solid rgba(79, 70, 229, 0.3);
+        }
+        
+        .tool-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+        
+        .visit-tool-btn {
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%);
+            color: white;
+            border-radius: var(--border-radius-sm);
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .visit-tool-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-glow-secondary);
+        }
+        
+        .review-btn {
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            border-radius: var(--border-radius-sm);
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        
+        .review-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Newsletter Section */
+        .newsletter-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+        
+        .newsletter-section .section-title {
+            color: white;
+            -webkit-text-fill-color: white;
+        }
+        
+        .newsletter-section .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .newsletter-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-input-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .newsletter-input-group input {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+        
+        .btn-newsletter {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .btn-newsletter:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .newsletter-disclaimer {
+            text-align: center;
+            margin-top: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* Submission Form */
+        .submission-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-light);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.75rem;
+            border: 1px solid rgba(79, 70, 229, 0.3);
+            border-radius: var(--border-radius-sm);
+            background: var(--bg-dark);
+            color: var(--text-light);
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 2000;
+            backdrop-filter: blur(5px);
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: var(--bg-card);
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .auth-tabs {
+            display: flex;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(79, 70, 229, 0.3);
+        }
+        
+        .auth-tab {
+            flex: 1;
+            padding: 1rem;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            transition: var(--transition);
+            border-bottom: 2px solid transparent;
+        }
+        
+        .auth-tab.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+        
+        .auth-form {
+            display: none;
+        }
+        
+        .auth-form.active {
+            display: block;
+        }
+        
+        /* Tool Detail Modal */
+        .tool-detail-modal .modal-content {
+            max-width: 800px;
+            padding: 0;
+        }
+        
+        .tool-detail-header {
+            display: flex;
+            padding: 2rem;
+            border-bottom: 1px solid rgba(79, 70, 229, 0.2);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+        }
+        
+        .tool-detail-image {
+            flex: 0 0 150px;
+            margin-right: 2rem;
+        }
+        
+        .tool-detail-image img {
+            width: 100%;
+            border-radius: var(--border-radius);
+        }
+        
+        .tool-detail-info {
+            flex: 1;
+        }
+        
+        .tool-detail-info .tool-category {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .tool-detail-info h2 {
+            margin: 0.5rem 0;
+            color: white;
+        }
+        
+        .tool-detail-info .tool-rating {
+            margin-bottom: 1rem;
+        }
+        
+        .tool-detail-info .tool-tagline {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5rem;
+        }
+        
+        .tool-detail-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .tool-detail-content {
+            padding: 2rem;
+        }
+        
+        .detail-section {
+            margin-bottom: 2rem;
+        }
+        
+        .detail-section h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .detail-section ul, .detail-section ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .detail-section li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .pros-cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .pros h4, .cons h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .pros ul li {
+            color: #10b981;
+        }
+        
+        .cons ul li {
+            color: #ef4444;
+        }
+        
+        /* Loading State */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+            grid-column: 1 / -1;
+        }
+        
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(79, 70, 229, 0.2);
+            border-left: 4px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* No Results State */
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            grid-column: 1 / -1;
+        }
+        
+        .no-results-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+        
+        /* Error State */
+        .error-state {
+            text-align: center;
+            padding: 3rem;
+            grid-column: 1 / -1;
+        }
+        
+        .error-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.7;
+        }
+        
+        /* Load More Button */
+        .load-more-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        
+        .load-more {
+            padding: 1rem 2rem;
+        }
+        
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: var(--shadow-glow);
+            transition: var(--transition);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .scroll-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px var(--primary);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--bg-darker) 0%, #020617 100%);
+            color: white;
+            padding: 4rem 0 2rem;
+            border-top: 1px solid rgba(79, 70, 229, 0.3);
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+            color: var(--text-light);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--text-light);
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(79, 70, 229, 0.2);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        /* Notification Styles */
+        .notification {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background: var(--bg-card);
+            color: var(--text-light);
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-lg);
+            border-left: 4px solid var(--primary);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            max-width: 400px;
+            animation: slideIn 0.3s ease;
+        }
+        
+        .notification-success {
+            border-left-color: #10b981;
+        }
+        
+        .notification-error {
+            border-left-color: #ef4444;
+        }
+        
+        .notification-info {
+            border-left-color: var(--accent);
+        }
+        
+        .notification-close {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--bg-card);
+                flex-direction: column;
+                align-items: center;
+                padding-top: 2rem;
+                transition: var(--transition);
+                box-shadow: var(--shadow-lg);
+                border-top: 1px solid rgba(79, 70, 229, 0.3);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-item {
+                margin: 0 0 1.5rem;
+            }
+            
+            .user-actions {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .user-menu {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.125rem;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tools-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .newsletter-input-group {
+                flex-direction: column;
+            }
+            
+            .newsletter-input-group input {
+                min-width: auto;
+            }
+            
+            .scroll-to-top {
+                bottom: 1rem;
+                right: 1rem;
+            }
+            
+            .sort-options {
+                flex-wrap: wrap;
+            }
+            
+            .filter-select {
+                flex: 1;
+                min-width: 120px;
+            }
+            
+            .tool-detail-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .tool-detail-image {
+                margin-right: 0;
+                margin-bottom: 1.5rem;
+            }
+            
+            .tool-detail-actions {
+                justify-content: center;
+            }
+            
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (min-width: 1025px) and (max-width: 1400px) {
+            .tools-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (min-width: 1401px) {
+            .tools-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🤖</span>
+                <span>FreeAITools Hub</span>
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#categories" class="nav-link">Categories</a></li>
+                    <li class="nav-item"><a href="#submit-tool" class="nav-link">Submit Tool</a></li>
+                    <li class="nav-item"><a href="#tools" class="nav-link">All Tools</a></li>
+                    <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <div class="user-actions">
+                            <button id="authButton" class="btn btn-outline">Login</button>
+                            <div id="userMenu" class="user-menu" style="display: none;">
+                                <span class="user-greeting">Hello, <span id="userName"></span></span>
+                                <button id="favoritesBtn">My Favorites</button>
+                                <button id="logoutBtn">Logout</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                            🌙
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1>Discover 1000+ Free AI Tools</h1>
+            <p>Your trusted directory for discovering and comparing AI-powered tools across categories like writing, coding, image generation, and productivity.</p>
+
+            <div class="hero-search">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="search-input" id="searchInput" placeholder="Search AI tools by name, category, or description...">
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#tools" class="btn">Explore Tools</a>
+                <a href="#categories" class="btn btn-outline">Browse Categories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI Tools Categories</h2>
+                <p class="section-subtitle">Discover specialized AI solutions tailored to your specific needs and goals</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">💼</div>
+                    <h3 class="category-title">Business & Marketing</h3>
+                    <p class="category-description">AI tools for business automation, marketing analytics, customer service, and sales optimization.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3 class="category-title">Content Creation</h3>
+                    <p class="category-description">AI writing assistants, image generators, video editors, and creative content tools.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3 class="category-title">Education & Learning</h3>
+                    <p class="category-description">AI tools for students, researchers, and lifelong learners to enhance education.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">⚡</div>
+                    <h3 class="category-title">Productivity</h3>
+                    <p class="category-description">AI-powered task management, scheduling, email automation, and workflow optimization.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3 class="category-title">Development</h3>
+                    <p class="category-description">AI coding assistants, debugging tools, API generators, and development frameworks.</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🎵</div>
+                    <h3 class="category-title">Audio & Video</h3>
+                    <p class="category-description">AI tools for audio processing, music generation, video editing, and podcast creation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <div class="tools-header">
+                <div class="tools-count" id="toolsCount">Loading tools...</div>
+                <div class="sort-options">
+                    <label for="categoryFilter" class="sr-only">Filter by Category</label>
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="Business & Marketing">Business & Marketing</option>
+                        <option value="Content Creation">Content Creation</option>
+                        <option value="Education & Learning">Education & Learning</option>
+                        <option value="Productivity">Productivity</option>
+                        <option value="Development">Development</option>
+                        <option value="Audio & Video">Audio & Video</option>
+                    </select>
+
+                    <label for="pricingFilter" class="sr-only">Filter by Pricing</label>
+                    <select id="pricingFilter" class="filter-select">
+                        <option value="">All Pricing</option>
+                        <option value="Free">Free Only</option>
+                        <option value="Freemium">Freemium</option>
+                        <option value="Paid">Paid</option>
+                    </select>
+
+                    <label for="ratingFilter" class="sr-only">Minimum Rating</label>
+                    <select id="ratingFilter" class="filter-select">
+                        <option value="0">Any Rating</option>
+                        <option value="4.5">4.5+ Stars</option>
+                        <option value="4.0">4.0+ Stars</option>
+                        <option value="3.5">3.5+ Stars</option>
+                    </select>
+
+                    <label for="sortSelect" class="sr-only">Sort By</label>
+                    <select id="sortSelect" class="filter-select">
+                        <option value="popularity">Popularity</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="name">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                        <option value="newest">Newest First</option>
+                        <option value="reviews">Most Reviews</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="tools-grid" id="toolsGrid">
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-outline load-more" id="loadMore" style="display: none;">Load More Tools</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section newsletter-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Stay Updated</h2>
+                <p class="section-subtitle">Get weekly AI tool discoveries, tips, and exclusive content</p>
+            </div>
+
+            <div class="newsletter-form">
+                <form id="newsletterForm" class="newsletter-form-inner">
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-newsletter">Subscribe</button>
+                    </div>
+                    <p class="newsletter-disclaimer">
+                        No spam. Unsubscribe anytime.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Submission Section -->
+    <section id="submit-tool" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Submit a Tool</h2>
+                <p class="section-subtitle">Found an amazing free AI tool? Share it with our community!</p>
+            </div>
+
+            <form id="toolSubmissionForm" class="submission-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="toolName">Tool Name *</label>
+                        <input type="text" id="toolName" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="toolUrl">Website URL *</label>
+                        <input type="url" id="toolUrl" name="url" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="toolCategory">Category *</label>
+                        <select id="toolCategory" name="category" required>
+                            <option value="">Select Category</option>
+                            <option value="Business & Marketing">Business & Marketing</option>
+                            <option value="Content Creation">Content Creation</option>
+                            <option value="Education & Learning">Education & Learning</option>
+                            <option value="Productivity">Productivity</option>
+                            <option value="Development">Development</option>
+                            <option value="Audio & Video">Audio & Video</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="toolDescription">Description *</label>
+                        <textarea id="toolDescription" name="description" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="toolTags">Tags (comma separated)</label>
+                        <input type="text" id="toolTags" name="tags" placeholder="ai, writing, productivity">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="toolFeatures">Key Features</label>
+                        <textarea id="toolFeatures" name="features" rows="3" placeholder="Feature 1, Feature 2, Feature 3"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">Submit Tool</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>FreeAITools Hub</h3>
+                    <p>Your trusted resource for discovering the best free AI tools online for business, content creation, students, and productivity.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://youtube.com" class="social-link" aria-label="YouTube" target="_blank" rel="noopener">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#submit-tool">Submit Tool</a></li>
+                        <li><a href="#tools">All Tools</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#categories">Business & Marketing</a></li>
+                        <li><a href="#categories">Content Creation</a></li>
+                        <li><a href="#categories">Education & Learning</a></li>
+                        <li><a href="#categories">Productivity</a></li>
+                        <li><a href="#categories">Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="./privacy.html">Privacy Policy</a></li>
+                        <li><a href="./terms.html">Terms of Service</a></li>
+                        <li><a href="./cookies.html">Cookie Policy</a></li>
+                        <li><a href="./disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 FreeAITools Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Authentication Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="register">Register</button>
+            </div>
+
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" required minlength="6">
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tool Detail Modal -->
+    <div id="toolDetailModal" class="modal tool-detail-modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="toolDetailContent">
+                <!-- Tool details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">↑</button>
+
+    <script>
+        // Configuration
+        const CONFIG = {
+            itemsPerPage: 12,
+            debounceDelay: 300,
+            API_BASE_URL: 'https://your-backend-api.com/api'
+        };
+
+        // Global state
+        let allTools = [];
+        let filteredTools = [];
+        let currentPage = 1;
+        let isLoading = false;
+        let lastScrollY = 0;
+        let currentUser = null;
+        let userFavorites = new Set();
+
+        // Tool Data Generation - This simulates having 1000+ tools
+        function generateToolsData() {
+            const categories = [
+                "Business & Marketing",
+                "Content Creation", 
+                "Education & Learning",
+                "Productivity",
+                "Development",
+                "Audio & Video"
+            ];
+            
+            const pricingModels = ["Free", "Freemium", "Paid"];
+            
+            const toolNames = [
+                "ChatGPT", "DALL-E 2", "Grammarly", "GitHub Copilot", "Canva AI", "Notion AI", "Midjourney", "Hugging Face",
+                "Jasper", "Copy.ai", "Writesonic", "ShortlyAI", "Rytr", "Wordtune", "Quillbot", "Jarvis",
+                "Surfer SEO", "Frase", "MarketMuse", "Clearscope", "SEMrush", "Ahrefs", "BuzzSumo", "Moz",
+                "Lumen5", "InVideo", "Pictory", "RunwayML", "Descript", "Murf", "Synthesia", "DeepBrain AI",
+                "Otter.ai", "Trint", "Sonix", "Temi", "Rev", "Speechmatics", "AssemblyAI", "Deepgram",
+                "Codex", "Tabnine", "Kite", "Codota", "IntelliCode", "Replit", "Glitch", "CodePen",
+                "Figma", "Sketch", "Adobe XD", "InVision", "Marvel", "Proto.io", "Framer", "Webflow",
+                "Zapier", "IFTTT", "Make", "n8n", "Automate.io", "Integromat", "Pabbly", "Workato",
+                "Airtable", "Coda", "Notion", "ClickUp", "Asana", "Trello", "Monday.com", "Basecamp",
+                "Slack", "Microsoft Teams", "Discord", "Zoom", "Google Meet", "Skype", "Webex", "GoToMeeting",
+                "Calendly", "Acuity Scheduling", "YouCanBook.me", "Doodle", "ScheduleOnce", "Appointlet", "Setmore", "SimplyBook",
+                "Loom", "Vidyard", "Wistia", "Vimeo", "YouTube", "Dailymotion", "Twitch", "Brightcove",
+                "Mailchimp", "ConvertKit", "ActiveCampaign", "GetResponse", "Sendinblue", "AWeber", "Constant Contact", "HubSpot",
+                "Google Analytics", "Mixpanel", "Amplitude", "Heap", "Hotjar", "Crazy Egg", "Mouseflow", "Lucky Orange",
+                "Optimizely", "VWO", "AB Tasty", "Convert", "Google Optimize", "Unbounce", "Instapage", "Leadpages",
+                "Shopify", "WooCommerce", "BigCommerce", "Magento", "PrestaShop", "OpenCart", "Volusion", "3dcart",
+                "WordPress", "Wix", "Squarespace", "Webflow", "Weebly", "Jimdo", "Site123", "Strikingly"
+            ];
+            
+            const tools = [];
+            let id = 1;
+            
+            // Generate 1000+ tools
+            for (let i = 0; i < 1000; i++) {
+                const category = categories[Math.floor(Math.random() * categories.length)];
+                const pricing = pricingModels[Math.floor(Math.random() * pricingModels.length)];
+                const name = toolNames[Math.floor(Math.random() * toolNames.length)] + (i > toolNames.length ? ` ${Math.floor(i / toolNames.length) + 1}` : '');
+                const rating = (Math.random() * 2 + 3).toFixed(1); // 3.0 to 5.0
+                const reviewCount = Math.floor(Math.random() * 10000) + 100;
+                const popularity = Math.floor(Math.random() * 100);
+                
+                // Generate unique features based on category
+                const features = generateFeatures(category);
+                const howToUse = generateHowToUse(category);
+                const pros = generatePros(category);
+                const cons = generateCons(category);
+                
+                tools.push({
+                    id: id++,
+                    name: name,
+                    tagline: generateTagline(category, name),
+                    description: generateDescription(category, name),
+                    category: category,
+                    url: `https://${name.toLowerCase().replace(/\s+/g, '')}.com`,
+                    tags: generateTags(category),
+                    popularity: popularity,
+                    last_updated: generateRandomDate(),
+                    logo: generateLogo(name),
+                    thumbnail: generateThumbnail(name),
+                    pricing: pricing,
+                    features: features,
+                    rating: parseFloat(rating),
+                    review_count: reviewCount,
+                    how_to_use: howToUse,
+                    pros: pros,
+                    cons: cons
+                });
+            }
+            
+            return tools;
+        }
+        
+        function generateTagline(category, name) {
+            const taglines = {
+                "Business & Marketing": [
+                    "Boost your business with AI-powered insights",
+                    "Automate your marketing with intelligent tools",
+                    "Drive growth with data-driven decisions",
+                    "Optimize your campaigns with AI assistance"
+                ],
+                "Content Creation": [
+                    "Create stunning content with AI assistance",
+                    "Generate engaging content in minutes",
+                    "Transform your ideas into compelling stories",
+                    "Enhance your creativity with AI tools"
+                ],
+                "Education & Learning": [
+                    "Learn smarter with AI-powered education",
+                    "Personalize your learning experience",
+                    "Master new skills with intelligent tutoring",
+                    "Transform education with AI technology"
+                ],
+                "Productivity": [
+                    "Boost your productivity with AI automation",
+                    "Streamline your workflow with smart tools",
+                    "Work smarter, not harder with AI assistance",
+                    "Optimize your tasks with intelligent automation"
+                ],
+                "Development": [
+                    "Code faster with AI-powered assistance",
+                    "Build better software with intelligent tools",
+                    "Streamline development with AI automation",
+                    "Enhance your coding with smart suggestions"
+                ],
+                "Audio & Video": [
+                    "Create professional audio with AI tools",
+                    "Produce stunning videos with AI assistance",
+                    "Transform your media with intelligent editing",
+                    "Enhance your content with AI technology"
+                ]
+            };
+            
+            const categoryTaglines = taglines[category] || taglines["Content Creation"];
+            return categoryTaglines[Math.floor(Math.random() * categoryTaglines.length)];
+        }
+        
+        function generateDescription(category, name) {
+            return `${name} is a powerful AI tool for ${category.toLowerCase()} that helps users achieve their goals faster and more efficiently. With cutting-edge artificial intelligence technology, it provides intelligent solutions tailored to your specific needs.`;
+        }
+        
+        function generateFeatures(category) {
+            const features = {
+                "Business & Marketing": ["Analytics Dashboard", "Customer Segmentation", "Automated Campaigns", "ROI Tracking", "Competitor Analysis"],
+                "Content Creation": ["Content Generation", "SEO Optimization", "Plagiarism Check", "Tone Adjustment", "Multi-language Support"],
+                "Education & Learning": ["Personalized Learning", "Progress Tracking", "Interactive Exercises", "Knowledge Assessment", "Adaptive Curriculum"],
+                "Productivity": ["Task Automation", "Time Tracking", "Collaboration Tools", "Project Management", "Workflow Optimization"],
+                "Development": ["Code Completion", "Debugging Assistance", "API Integration", "Version Control", "Performance Optimization"],
+                "Audio & Video": ["Audio Enhancement", "Video Editing", "Transcription Services", "Effects Library", "Format Conversion"]
+            };
+            
+            const categoryFeatures = features[category] || features["Content Creation"];
+            // Return 3-5 random features
+            const count = Math.floor(Math.random() * 3) + 3;
+            const shuffled = [...categoryFeatures].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+        
+        function generateHowToUse(category) {
+            const steps = {
+                "Business & Marketing": [
+                    "Sign up for an account on the platform",
+                    "Connect your business data sources",
+                    "Set up your marketing campaigns",
+                    "Monitor performance and adjust strategies"
+                ],
+                "Content Creation": [
+                    "Create an account and log in",
+                    "Choose your content type and topic",
+                    "Customize the output parameters",
+                    "Generate and refine your content"
+                ],
+                "Education & Learning": [
+                    "Register for a free account",
+                    "Select your learning goals and level",
+                    "Complete interactive lessons and exercises",
+                    "Track your progress and achievements"
+                ],
+                "Productivity": [
+                    "Install the application or extension",
+                    "Connect your tools and accounts",
+                    "Set up your workflows and automations",
+                    "Monitor and optimize your productivity"
+                ],
+                "Development": [
+                    "Install the IDE extension or plugin",
+                    "Configure your development environment",
+                    "Start coding with AI assistance",
+                    "Review and implement suggestions"
+                ],
+                "Audio & Video": [
+                    "Upload your media files",
+                    "Apply AI enhancements and edits",
+                    "Customize the output settings",
+                    "Export and download your final product"
+                ]
+            };
+            
+            return steps[category] || steps["Content Creation"];
+        }
+        
+        function generatePros(category) {
+            const pros = {
+                "Business & Marketing": [
+                    "Saves time on manual tasks",
+                    "Provides data-driven insights",
+                    "Improves campaign performance",
+                    "Easy to use interface"
+                ],
+                "Content Creation": [
+                    "Generates high-quality content quickly",
+                    "Supports multiple content types",
+                    "Improves SEO performance",
+                    "User-friendly interface"
+                ],
+                "Education & Learning": [
+                    "Personalized learning experience",
+                    "Adapts to individual pace",
+                    "Comprehensive knowledge base",
+                    "Engaging interactive content"
+                ],
+                "Productivity": [
+                    "Automates repetitive tasks",
+                    "Integrates with popular tools",
+                    "Improves workflow efficiency",
+                    "Easy to set up and use"
+                ],
+                "Development": [
+                    "Accelerates coding process",
+                    "Reduces errors and bugs",
+                    "Supports multiple languages",
+                    "Seamless IDE integration"
+                ],
+                "Audio & Video": [
+                    "Professional-quality results",
+                    "Saves editing time",
+                    "Wide range of effects",
+                    "Intuitive user interface"
+                ]
+            };
+            
+            const categoryPros = pros[category] || pros["Content Creation"];
+            // Return 3-4 random pros
+            const count = Math.floor(Math.random() * 2) + 3;
+            const shuffled = [...categoryPros].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+        
+        function generateCons(category) {
+            const cons = {
+                "Business & Marketing": [
+                    "Learning curve for advanced features",
+                    "Limited customization options",
+                    "Premium features require subscription",
+                    "Occasional performance issues"
+                ],
+                "Content Creation": [
+                    "May require content refinement",
+                    "Limited creative control",
+                    "Subscription for full features",
+                    "Occasional inaccuracies in output"
+                ],
+                "Education & Learning": [
+                    "Limited advanced topics",
+                    "Requires consistent internet connection",
+                    "Premium content behind paywall",
+                    "May not suit all learning styles"
+                ],
+                "Productivity": [
+                    "Initial setup can be time-consuming",
+                    "Some integrations require premium",
+                    "Learning curve for complex workflows",
+                    "Mobile app lacks some features"
+                ],
+                "Development": [
+                    "Can be resource-intensive",
+                    "Limited support for niche languages",
+                    "Premium features require payment",
+                    "Occasional incorrect suggestions"
+                ],
+                "Audio & Video": [
+                    "High-quality exports require premium",
+                    "Processing can be slow for large files",
+                    "Limited advanced editing features",
+                    "Watermark on free version"
+                ]
+            };
+            
+            const categoryCons = cons[category] || cons["Content Creation"];
+            // Return 2-3 random cons
+            const count = Math.floor(Math.random() * 2) + 2;
+            const shuffled = [...categoryCons].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+        
+        function generateTags(category) {
+            const tags = {
+                "Business & Marketing": ["marketing", "analytics", "automation", "sales", "ROI"],
+                "Content Creation": ["writing", "SEO", "creativity", "editing", "publishing"],
+                "Education & Learning": ["learning", "tutoring", "courses", "knowledge", "skills"],
+                "Productivity": ["automation", "efficiency", "time management", "workflow", "organization"],
+                "Development": ["coding", "programming", "debugging", "APIs", "frameworks"],
+                "Audio & Video": ["editing", "production", "audio", "video", "media"]
+            };
+            
+            const categoryTags = tags[category] || tags["Content Creation"];
+            // Return 3-5 random tags
+            const count = Math.floor(Math.random() * 3) + 3;
+            const shuffled = [...categoryTags].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+        
+        function generateRandomDate() {
+            const start = new Date(2023, 0, 1);
+            const end = new Date();
+            const date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+            return date.toISOString().split('T')[0];
+        }
+        
+        function generateLogo(name) {
+            // In a real implementation, this would be actual logo URLs
+            // For this demo, we'll use a placeholder service with the tool name
+            const colors = ["4f46e5", "8b5cf6", "06b6d4", "10b981", "f59e0b", "ef4444"];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            return `https://via.placeholder.com/200x200/${color}/ffffff?text=${encodeURIComponent(name.substring(0, 2).toUpperCase())}`;
+        }
+        
+        function generateThumbnail(name) {
+            // In a real implementation, this would be actual thumbnail URLs
+            // For this demo, we'll use a placeholder service with the tool name
+            const colors = ["4f46e5", "8b5cf6", "06b6d4", "10b981", "f59e0b", "ef4444"];
+            const color = colors[Math.floor(Math.random() * colors.length)];
+            return `https://via.placeholder.com/400x200/${color}/ffffff?text=${encodeURIComponent(name)}`;
+        }
+
+        // Utility Functions
+        const UTILS = {
+            debounce(func, wait) {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            },
+
+            generateStars(rating) {
+                let stars = '';
+                const fullStars = Math.floor(rating);
+                const hasHalfStar = rating % 1 >= 0.5;
+
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= fullStars) {
+                        stars += '<span class="star">★</span>';
+                    } else if (i === fullStars + 1 && hasHalfStar) {
+                        stars += '<span class="star">★</span>';
+                    } else {
+                        stars += '<span class="star empty">★</span>';
+                    }
+                }
+
+                return stars;
+            },
+
+            formatNumber(num) {
+                return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            },
+
+            getAffiliateLink(originalUrl) {
+                const AFFILIATE_LINKS = {
+                    "chat.openai.com": "https://chat.openai.com/?ref=freeaitools",
+                    "openai.com/dall-e-2": "https://openai.com/dall-e-2?ref=freeaitools",
+                    "grammarly.com": "https://grammarly.com?ref=freeaitools",
+                    "github.com/features/copilot": "https://github.com/features/copilot?ref=freeaitools",
+                    "canva.com": "https://canva.com?ref=freeaitools",
+                    "notion.so": "https://notion.so?ref=freeaitools",
+                    "midjourney.com": "https://midjourney.com?ref=freeaitools",
+                    "huggingface.co": "https://huggingface.co?ref=freeaitools"
+                };
+
+                const domain = originalUrl.replace('https://', '').replace('http://', '').split('/')[0];
+                return AFFILIATE_LINKS[domain] || originalUrl;
+            },
+
+            showNotification(message, type = 'info') {
+                // Remove existing notifications
+                document.querySelectorAll('.notification').forEach(notification => {
+                    notification.remove();
+                });
+
+                // Create notification element
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                notification.innerHTML = `
+                    <span>${message}</span>
+                    <button class="notification-close">&times;</button>
+                `;
+
+                // Add to page
+                document.body.appendChild(notification);
+
+                // Close button functionality
+                notification.querySelector('.notification-close').addEventListener('click', function() {
+                    notification.remove();
+                });
+
+                // Auto remove after 5 seconds
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        notification.remove();
+                    }
+                }, 5000);
+            }
+        };
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            initTheme();
+            initNavigation();
+            initAuthentication();
+            loadToolsData();
+            initSearch();
+            initScrollEvents();
+            initForms();
+            initNewsletter();
+            initGoogleAnalytics();
+        });
+
+        // Theme functionality
+        function initTheme() {
+            const themeToggle = document.getElementById('themeToggle');
+            const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+            const currentTheme = localStorage.getItem('theme') || 
+                                (prefersDarkScheme.matches ? 'dark' : 'light');
+
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            updateThemeToggle(currentTheme);
+
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+
+                updateThemeToggle(newTheme);
+            });
+
+            prefersDarkScheme.addEventListener('change', function(e) {
+                if (!localStorage.getItem('theme')) {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    updateThemeToggle(newTheme);
+                }
+            });
+        }
+
+        function updateThemeToggle(theme) {
+            const themeToggle = document.getElementById('themeToggle');
+            themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+            themeToggle.setAttribute('aria-label', 
+                theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        }
+
+        // Navigation functionality
+        function initNavigation() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                navToggle.setAttribute('aria-expanded', 
+                    navToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
+
+        // Authentication functionality
+        function initAuthentication() {
+            const authButton = document.getElementById('authButton');
+            const authModal = document.getElementById('authModal');
+            const modalClose = document.querySelector('.modal-close');
+            const authTabs = document.querySelectorAll('.auth-tab');
+            const authForms = document.querySelectorAll('.auth-form');
+            const loginForm = document.getElementById('loginForm');
+            const registerForm = document.getElementById('registerForm');
+            const logoutBtn = document.getElementById('logoutBtn');
+            const favoritesBtn = document.getElementById('favoritesBtn');
+
+            checkAuthStatus();
+
+            authButton.addEventListener('click', function() {
+                if (currentUser) {
+                    toggleUserMenu();
+                } else {
+                    authModal.classList.add('active');
+                }
+            });
+
+            modalClose.addEventListener('click', function() {
+                authModal.classList.remove('active');
+            });
+
+            authTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabName = this.getAttribute('data-tab');
+
+                    authTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    authForms.forEach(form => {
+                        form.classList.remove('active');
+                        if (form.id === `${tabName}Form`) {
+                            form.classList.add('active');
+                        }
+                    });
+                });
+            });
+
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                const email = formData.get('email');
+                const password = formData.get('password');
+
+                simulateLogin(email, password);
+            });
+
+            registerForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const password = formData.get('password');
+
+                simulateRegistration(name, email, password);
+            });
+
+            logoutBtn.addEventListener('click', function() {
+                logout();
+            });
+
+            favoritesBtn.addEventListener('click', function() {
+                showFavorites();
+            });
+
+            authModal.addEventListener('click', function(e) {
+                if (e.target === authModal) {
+                    authModal.classList.remove('active');
+                }
+            });
+        }
+
+        function checkAuthStatus() {
+            const userData = localStorage.getItem('freeAITools_user');
+            if (userData) {
+                currentUser = JSON.parse(userData);
+                updateUserInterface();
+                loadFavorites();
+            }
+        }
+
+        function simulateLogin(email, password) {
+            setTimeout(() => {
+                if (email && password) {
+                    currentUser = {
+                        id: Date.now(),
+                        name: email.split('@')[0],
+                        email: email
+                    };
+
+                    localStorage.setItem('freeAITools_user', JSON.stringify(currentUser));
+                    updateUserInterface();
+                    document.getElementById('authModal').classList.remove('active');
+                    UTILS.showNotification('Login successful!', 'success');
+                    loadFavorites();
+                } else {
+                    UTILS.showNotification('Please enter valid credentials', 'error');
+                }
+            }, 1000);
+        }
+
+        function simulateRegistration(name, email, password) {
+            setTimeout(() => {
+                if (name && email && password) {
+                    currentUser = {
+                        id: Date.now(),
+                        name: name,
+                        email: email
+                    };
+
+                    localStorage.setItem('freeAITools_user', JSON.stringify(currentUser));
+                    updateUserInterface();
+                    document.getElementById('authModal').classList.remove('active');
+                    UTILS.showNotification('Registration successful!', 'success');
+                    loadFavorites();
+                } else {
+                    UTILS.showNotification('Please fill all fields', 'error');
+                }
+            }, 1000);
+        }
+
+        function logout() {
+            currentUser = null;
+            userFavorites.clear();
+            localStorage.removeItem('freeAITools_user');
+            localStorage.removeItem('freeAITools_favorites');
+            updateUserInterface();
+            UTILS.showNotification('Logged out successfully', 'success');
+        }
+
+        function updateUserInterface() {
+            const authButton = document.getElementById('authButton');
+            const userMenu = document.getElementById('userMenu');
+            const userName = document.getElementById('userName');
+
+            if (currentUser) {
+                authButton.textContent = 'My Account';
+                userName.textContent = currentUser.name;
+                userMenu.style.display = 'flex';
+            } else {
+                authButton.textContent = 'Login';
+                userMenu.style.display = 'none';
+            }
+        }
+
+        function toggleUserMenu() {
+            const userMenu = document.getElementById('userMenu');
+            userMenu.style.display = userMenu.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        function loadFavorites() {
+            const favorites = localStorage.getItem('freeAITools_favorites');
+            if (favorites) {
+                userFavorites = new Set(JSON.parse(favorites));
+            }
+        }
+
+        function saveFavorites() {
+            localStorage.setItem('freeAITools_favorites', JSON.stringify([...userFavorites]));
+        }
+
+        function toggleFavorite(toolId) {
+            if (!currentUser) {
+                UTILS.showNotification('Please login to save favorites', 'error');
+                document.getElementById('authModal').classList.add('active');
+                return;
+            }
+
+            if (userFavorites.has(toolId)) {
+                userFavorites.delete(toolId);
+                UTILS.showNotification('Removed from favorites', 'success');
+            } else {
+                userFavorites.add(toolId);
+                UTILS.showNotification('Added to favorites', 'success');
+            }
+
+            saveFavorites();
+            displayTools(currentPage);
+        }
+
+        function isFavorited(toolId) {
+            return userFavorites.has(toolId);
+        }
+
+        function showFavorites() {
+            if (userFavorites.size === 0) {
+                UTILS.showNotification('No favorites yet!', 'info');
+                return;
+            }
+
+            filteredTools = allTools.filter(tool => userFavorites.has(tool.id));
+            displayTools(1);
+            UTILS.showNotification(`Showing ${userFavorites.size} favorite tools`, 'success');
+        }
+
+        // Tools data loading
+        async function loadToolsData() {
+            try {
+                document.getElementById('toolsGrid').innerHTML = `
+                    <div class="loading">
+                        <div class="spinner"></div>
+                    </div>
+                `;
+
+                // Generate 1000+ tools
+                allTools = generateToolsData();
+                filteredTools = [...allTools];
+
+                updateStats();
+                displayTools();
+
+            } catch (error) {
+                console.error('Error loading tools:', error);
+                document.getElementById('toolsGrid').innerHTML = 
+                    '<div class="error-state">Error loading tools. Please try again later.</div>';
+            }
+        }
+
+        function updateStats() {
+            document.getElementById('toolsCount').textContent = `${allTools.length.toLocaleString()} tools available`;
+        }
+
+        // Tools display with pagination
+        function displayTools(page = 1) {
+            const toolsGrid = document.getElementById('toolsGrid');
+            const toolsCount = document.getElementById('toolsCount');
+            const loadMoreBtn = document.getElementById('loadMore');
+
+            // Calculate pagination
+            const startIndex = (page - 1) * CONFIG.itemsPerPage;
+            const endIndex = Math.min(startIndex + CONFIG.itemsPerPage, filteredTools.length);
+            const pageTools = filteredTools.slice(startIndex, endIndex);
+
+            // Clear previous content if it's the first page
+            if (page === 1) {
+                toolsGrid.innerHTML = '';
+            }
+
+            if (pageTools.length === 0 && page === 1) {
+                toolsGrid.innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">🔍</div>
+                        <h3>No tools found</h3>
+                        <p>Try adjusting your search terms or filters</p>
+                    </div>
+                `;
+                toolsCount.textContent = '0 tools found';
+                loadMoreBtn.style.display = 'none';
+                return;
+            }
+
+            // Update tools count
+            toolsCount.textContent = `${filteredTools.length.toLocaleString()} tool${filteredTools.length !== 1 ? 's' : ''} found`;
+
+            // Create tool cards with staggered animation
+            pageTools.forEach((tool, index) => {
+                setTimeout(() => {
+                    const toolCard = createToolCard(tool);
+                    toolsGrid.appendChild(toolCard);
+                }, index * 50);
+            });
+
+            // Show/hide load more button
+            if (filteredTools.length > page * CONFIG.itemsPerPage) {
+                loadMoreBtn.style.display = 'inline-flex';
+                loadMoreBtn.onclick = function() {
+                    displayTools(page + 1);
+                };
+            } else {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+        function createToolCard(tool) {
+            const card = document.createElement('div');
+            card.className = 'tool-card';
+            card.setAttribute('data-tool-id', tool.id);
+
+            const affiliateUrl = UTILS.getAffiliateLink(tool.url);
+
+            card.innerHTML = `
+                <div class="tool-image">
+                    <img src="${tool.thumbnail}" alt="${tool.name} thumbnail" loading="lazy">
+                    <button class="favorite-btn ${isFavorited(tool.id) ? 'favorited' : ''}" 
+                            data-tool-id="${tool.id}">
+                        ♥
+                    </button>
+                </div>
+                <div class="tool-content">
+                    <span class="tool-category">${tool.category}</span>
+                    <h3 class="tool-title">${tool.name}</h3>
+                    <div class="tool-rating">
+                        <div class="stars">
+                            ${UTILS.generateStars(tool.rating)}
+                        </div>
+                        <span class="rating-text">${tool.rating} (${UTILS.formatNumber(tool.review_count)})</span>
+                    </div>
+                    <p class="tool-tagline">${tool.tagline}</p>
+                    <div class="tool-tags">
+                        ${tool.tags.slice(0, 3).map(tag => `<span class="tool-tag">${tag}</span>`).join('')}
+                        ${tool.tags.length > 3 ? `<span class="tool-tag">+${tool.tags.length - 3}</span>` : ''}
+                    </div>
+                    <div class="tool-actions">
+                        <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer" class="visit-tool-btn">Visit Tool</a>
+                        <button class="review-btn view-details-btn" data-tool-id="${tool.id}">View Details</button>
+                    </div>
+                </div>
+            `;
+
+            // Add event listeners
+            const favoriteBtn = card.querySelector('.favorite-btn');
+            const viewDetailsBtn = card.querySelector('.view-details-btn');
+
+            favoriteBtn.addEventListener('click', function() {
+                const toolId = parseInt(this.getAttribute('data-tool-id'));
+                toggleFavorite(toolId);
+            });
+
+            viewDetailsBtn.addEventListener('click', function() {
+                const toolId = parseInt(this.getAttribute('data-tool-id'));
+                showToolDetails(toolId);
+            });
+
+            return card;
+        }
+
+        // Search and filter functionality
+        function initSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const sortSelect = document.getElementById('sortSelect');
+            const categoryFilter = document.getElementById('categoryFilter');
+            const pricingFilter = document.getElementById('pricingFilter');
+            const ratingFilter = document.getElementById('ratingFilter');
+
+            // Debounce search to improve performance
+            let searchTimeout;
+            searchInput.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(applyFilters, CONFIG.debounceDelay);
+            });
+
+            // Apply filters when sort or category changes
+            [sortSelect, categoryFilter, pricingFilter, ratingFilter].forEach(select => {
+                select.addEventListener('change', applyFilters);
+            });
+        }
+
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const sortBy = document.getElementById('sortSelect').value;
+            const category = document.getElementById('categoryFilter').value;
+            const pricing = document.getElementById('pricingFilter').value;
+            const minRating = parseFloat(document.getElementById('ratingFilter').value);
+
+            // Filter tools
+            filteredTools = allTools.filter(tool => {
+                // Search filter
+                const matchesSearch = searchTerm === '' || 
+                    tool.name.toLowerCase().includes(searchTerm) ||
+                    tool.description.toLowerCase().includes(searchTerm) ||
+                    tool.tags.some(tag => tag.toLowerCase().includes(searchTerm));
+
+                // Category filter
+                const matchesCategory = category === '' || tool.category === category;
+                const matchesPricing = pricing === '' || tool.pricing === pricing;
+                const matchesRating = minRating === 0 || tool.rating >= minRating;
+
+                return matchesSearch && matchesCategory && matchesPricing && matchesRating;
+            });
+
+            // Sort tools
+            filteredTools.sort((a, b) => {
+                switch(sortBy) {
+                    case 'name':
+                        return a.name.localeCompare(b.name);
+                    case 'name-desc':
+                        return b.name.localeCompare(a.name);
+                    case 'newest':
+                        return new Date(b.last_updated) - new Date(a.last_updated);
+                    case 'rating':
+                        return b.rating - a.rating;
+                    case 'reviews':
+                        return b.review_count - a.review_count;
+                    case 'popularity':
+                    default:
+                        return b.popularity - a.popularity;
+                }
+            });
+
+            // Display filtered tools (reset to page 1)
+            displayTools(1);
+        }
+
+        // Scroll functionality
+        function initScrollEvents() {
+            const header = document.querySelector('header');
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+
+            // Header hide/show on scroll
+            window.addEventListener('scroll', function() {
+                // Show/hide header based on scroll direction
+                if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+
+                // Show/hide scroll to top button
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+
+                lastScrollY = window.scrollY;
+            });
+
+            // Scroll to top functionality
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Form initialization
+        function initForms() {
+            const submissionForm = document.getElementById('toolSubmissionForm');
+            const newsletterForm = document.getElementById('newsletterForm');
+
+            submissionForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                submitTool();
+            });
+
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                submitNewsletter();
+            });
+        }
+
+        function submitTool() {
+            const form = document.getElementById('toolSubmissionForm');
+            const formData = new FormData(form);
+
+            const submission = {
+                name: formData.get('name'),
+                url: formData.get('url'),
+                category: formData.get('category'),
+                description: formData.get('description'),
+                tags: formData.get('tags') ? formData.get('tags').split(',').map(tag => tag.trim()) : [],
+                features: formData.get('features') ? formData.get('features').split(',').map(feature => feature.trim()) : [],
+                submitted_by: currentUser ? currentUser.email : 'anonymous',
+                submitted_at: new Date().toISOString(),
+                status: 'pending'
+            };
+
+            // Simulate API call
+            setTimeout(() => {
+                UTILS.showNotification('Tool submitted successfully! It will be reviewed by our team.', 'success');
+                form.reset();
+            }, 1000);
+        }
+
+        function submitNewsletter() {
+            const email = document.getElementById('newsletterEmail').value;
+
+            // Simulate API call
+            setTimeout(() => {
+                UTILS.showNotification('Successfully subscribed to newsletter!', 'success');
+                document.getElementById('newsletterForm').reset();
+            }, 1000);
+        }
+
+        function initNewsletter() {
+            // Newsletter is already initialized in initForms
+        }
+
+        function showToolDetails(toolId) {
+            const tool = allTools.find(t => t.id === toolId);
+            if (!tool) return;
+
+            const modal = document.getElementById('toolDetailModal');
+            const content = document.getElementById('toolDetailContent');
+            const affiliateUrl = UTILS.getAffiliateLink(tool.url);
+
+            content.innerHTML = `
+                <div class="tool-detail-header">
+                    <div class="tool-detail-image">
+                        <img src="${tool.logo}" alt="${tool.name} logo">
+                    </div>
+                    <div class="tool-detail-info">
+                        <span class="tool-category">${tool.category}</span>
+                        <h2>${tool.name}</h2>
+                        <div class="tool-rating">
+                            <div class="stars">
+                                ${UTILS.generateStars(tool.rating)}
+                            </div>
+                            <span class="rating-text">${tool.rating} (${UTILS.formatNumber(tool.review_count)} reviews)</span>
+                        </div>
+                        <p class="tool-tagline">${tool.tagline}</p>
+                        <div class="tool-detail-actions">
+                            <a href="${affiliateUrl}" target="_blank" rel="noopener noreferrer" class="btn">Visit Tool</a>
+                            <button class="btn btn-outline" id="addToFavoritesDetail" data-tool-id="${tool.id}">
+                                ${isFavorited(tool.id) ? 'Remove from Favorites' : 'Add to Favorites'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tool-detail-content">
+                    <div class="detail-section">
+                        <h3>Description</h3>
+                        <p>${tool.description}</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            ${tool.features.map(feature => `<li>${feature}</li>`).join('')}
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>How to Use</h3>
+                        <ol>
+                            ${tool.how_to_use.map(step => `<li>${step}</li>`).join('')}
+                        </ol>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Pros & Cons</h3>
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>Pros</h4>
+                                <ul>
+                                    ${tool.pros.map(pro => `<li>${pro}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>Cons</h4>
+                                <ul>
+                                    ${tool.cons.map(con => `<li>${con}</li>`).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Pricing</h3>
+                        <p><strong>${tool.pricing}</strong></p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Tags</h3>
+                        <div class="tool-tags">
+                            ${tool.tags.map(tag => `<span class="tool-tag">${tag}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Add event listener for favorite button in modal
+            const favoriteBtn = content.querySelector('#addToFavoritesDetail');
+            favoriteBtn.addEventListener('click', function() {
+                const toolId = parseInt(this.getAttribute('data-tool-id'));
+                toggleFavorite(toolId);
+                this.textContent = isFavorited(toolId) ? 'Remove from Favorites' : 'Add to Favorites';
+            });
+
+            // Show modal
+            modal.classList.add('active');
+
+            // Close modal functionality
+            const closeBtn = modal.querySelector('.modal-close');
+            closeBtn.addEventListener('click', function() {
+                modal.classList.remove('active');
+            });
+
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                }
+            });
+        }
+
+        // Google Analytics
+        function initGoogleAnalytics() {
+            // Basic analytics implementation
+            console.log('FreeAITools Hub Analytics: Page loaded');
+        }
+    </script>
+</body>
+</html>
